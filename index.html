@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaToiya Brooks | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f8fafc;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(120deg, #0f172a, #0b1020); color: var(--text);
+    }
+    header { padding: 56px 24px; text-align: center; }
+    header h1 { font-size: 2.25rem; margin: 0 0 8px; }
+    header p { color: #cbd5e1; margin: 0; }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+    .card {
+      background: var(--card); border: 1px solid #1f2937; border-radius: 16px;
+      padding: 24px; margin-bottom: 16px; box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    a.button {
+      display: inline-block; margin-top: 12px; padding: 10px 14px; border-radius: 10px;
+      background: var(--accent); color: #082f49; font-weight: 600; text-decoration: none;
+    }
+    footer { text-align: center; color: #94a3b8; padding: 32px 24px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LaToiya Brooks</h1>
+    <p>Senior Project Manager • Higher Ed • EdD (in progress) • Atlanta, GA</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I am a Senior Project Manager in the University System, focused on enterprise initiatives
+        like PolicyStat implementation and job classification & compensation projects.
+        Passionate about improving student and staff experiences through systems and process design.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Career Navigator Project</h3>
+        <p>USO project currently in vendor acquisition phase. Role: PM overseeing scope, timeline, and vendor selection.</p>
+        <a class="button" href="#">View details</a>
+      </article>
+
+      <article class="card">
+        <h3>PolicyStat Implementation</h3>
+        <p>Led charter, team selection, and policy migration workflows. Defined granular policy levels and export standards.</p>
+        <a class="button" href="#">View details</a>
+      </article>
+
+      <article class="card">
+        <h3>Job Classification & Compensation</h3>
+        <p>Coordinated Advisory & Functional Teams; facilitated stakeholder engagement and schedule management.</p>
+        <a class="button" href="#">View details</a>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:latoiya@example.com">latoiya@example.com</a><br />
+        LinkedIn: <a href="https://www.linkedin.com/in/your-link">linkedin.com/in/your-link</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> LaToiya Brooks. Built with GitHub Pages.
+  </footer>
+
+  <script>
+    // Show current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
